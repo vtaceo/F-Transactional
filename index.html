@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Confirmation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        h1,
+        h2 {
+            color: #333333;
+        }
+
+        p {
+            color: #555555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #bb8787;
+            text-align: left;
+            padding: 8px;
+        }
+
+        .item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .socials {
+            background-color: orange;
+            margin: auto;
+            width: 50%;
+        }
+
+        .social-links {
+            width: 100%;
+        }
+
+
+
+        @media (max-width: 400px) {
+
+            /* .container {
+                max-width: 400px;
+            } */
+
+            .responsive-table {
+                display: block;
+                width: 100%;
+            }
+
+            .responsive-table td {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+            }
+
+
+            .addy-column {
+                background-color: orange;
+                width: 100% !important;
+            }
+        }
+
+        /* @media (max-width: 600px) {
+            .shipped-table  {
+                background-color: orange;
+                width: 100vw;
+            }
+        } */
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #db4d34;
+            color: #ffffff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- LOGO AND SHIPPING CONFIRMATION -->
+        <h1 style="text-align: center;">Logo</h1>
+        <h1 style="text-align: center; color: navy;">Shipping Confirmation</h1>
+        <p style="text-align: center;"> Dear [Customer Name],</p>
+        <p style="text-align: center; border-bottom: 1px solid grey; padding-bottom: 30px;">Your recent transaction has
+            been successfully
+            processed. Below are the details:
+        </p>
+        <table>
+            <tr>
+                <h3 style="text-align: center; margin-bottom: 0; padding-top: 15px; color: rgb(0, 204, 255);">Order
+                    #123456</h3>
+                <p style="text-align: center; margin: 0; color: grey;">December 1, 2023</p>
+            </tr>
+        </table>
+
+
+        <!-- SHIPPED ITEMS-->
+        <h4 style="color: rgb(0, 204, 255); border-bottom: 1px solid grey; padding-top: 15px;">Items Purchased:</h4>
+        <table class="responsive-table shipped-table">
+            <tr class="item shipped">
+                <td><img src="" alt="Pitcher Replacement Filter"></td>
+                <td>
+                    <p>Pitcher Replacement Filter</p>
+                    <p>Delivery every 2 Months</p>
+                </td>
+                <td>x1</td>
+            </tr>
+            <!-- Add more rows for additional items -->
+        </table>
+
+        <!-- SHIPPED ITEMS-->
+        <!-- <h4 style="color: rgb(0, 204, 255); border-bottom: 1px solid grey; padding-top: 15px;">Items Purchased:</h4>
+                <table class="responsive-table shipped-table">
+                    <tr class="item shipped">
+                        <td style="max-width: 25%;"><img
+                                src="https://shop.clearlyfiltered.com/cdn/shop/files/PitcherFilter_1_169a4689-22c1-4246-bce8-68e9af0b6c9b_750x.png?v=1694643413"
+                                alt="Pitcher Replacement Filter" style="max-width: 150px; "></td>
+                        <td style="max-width: 65%;">
+                            <p style="padding: 0; margin:0;">Pitcher Replacement Filter</p>
+                            <p style="padding-top: 5px; margin-top: 0; font-size: 12px;">Delivery every 2 Months</p>
+                        </td>
+                        <td style="max-width: 5%;">x1</td>
+                    </tr>
+
+                </table> -->
+
+
+
+        <!-- ADDRESS AND SHIPPED ITEMS -->
+        <table class="responsive-table ">
+            <tr>
+                <td style="width: 50%; border-top: 1px solid grey; padding: 0;" class="addy-column">
+                    <h4 style="margin: 0; background-color: orange;">Billing Address</h4>
+                    <p style="margin: 0;">[Billing Name]<br>
+                        [Billing Address Line 1]<br>
+                        [Billing Address Line 2]<br>
+                        [Billing City, State, Zip]<br>
+                        [Billing Country]</p>
+                </td>
+                <td>
+                    <h4 style="margin: 0;">Shipping Address</h4>
+                    <p style="margin: 0;">[Shipping Name]<br>
+                        [Shipping Address Line 1]<br>
+                        [Shipping Address Line 2]<br>
+                        [Shipping City, State, Zip]<br>
+                        [Shipping Country]</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 0; margin: 0;">
+
+                </td>
+                <td colspan="2">
+                    <h4 style="margin: 0;">Items Shipped</h4>
+                    <p style="margin: 0;">1/1</p>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <p style="text-align: center;">You can follow the status of your shipment by clicking the button below: </p>
+
+        <p style="text-align: center;">
+            <a href="[Your Website URL]" class="button">Track Package</a>
+        </p>
+
+        <p style=" text-align:center; grey; font-size: 13px;">Please note, it could take some time for the tracking
+            information to show
+            on the above.
+        </p>
+
+        <p style="text-align: center;">Please do not hesitate to give us a call on 8778762740 or send an email to
+            info@clearlyfiltered.com if you
+            have any questions at all.
+        </p>
+
+        <p style="text-align: center;">Many thanks,<br>
+            The Clearly Filtered Team </p>
+
+        <p style="text-align: center;"><a href="">Browse</a></p>
+
+
+
+        <table class="site-links">
+            <tr class="link">
+                <td style="text-align: center;"><a href="">Link</a></td>
+                <td style="text-align: center;"><a href="">Link</a></td>
+                <td style="text-align: center;"><a href="">Link</a></td>
+            </tr>
+        </table>
+
+        <table class="socials">
+            <tr class="social-links">
+                <td style="text-align: center;"><a href="">Link</a></td>
+                <td style="text-align: center;"><a href="">Link</a></td>
+                <td style="text-align: center;"><a href="">Link</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
