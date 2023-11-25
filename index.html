@@ -35,6 +35,7 @@
         p {
             color: #707070;
             font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
         }
 
         a {
@@ -60,9 +61,9 @@
         }
 
         .socials {
-            background-color: orange;
+            /* background-color: orange; */
             margin: auto;
-            width: 50%;
+            width: 27%;
         }
 
         .social-links {
@@ -96,25 +97,36 @@
 
 
             .responsive-table {
-                display: block;
-                width: 100%;
+                /* display: block; */
+                width: 100% !important;
+                /* background-color: darkblue; */
+                padding: 0 !important;
             }
 
             .responsive-table td {
-                display: block;
-                width: 100%;
-                box-sizing: border-box;
+                display: inline-flex;
+                flex-direction: column;
+                width: 100% !important;
+                /* box-sizing: border-box; */
                 margin-bottom: 10px;
+                padding: 0 !important;
             }
 
 
             .addy-column {
-                /* background-color: orange; */
                 width: 100% !important;
+                text-align: center;
+                padding: 0 !important;
             }
 
-            .ship {
+            /* .ship {
                 text-align: left !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            } */
+
+            .ship {
+                text-align: center !important;
                 margin: 0 !important;
                 padding: 0 !important;
             }
@@ -156,13 +168,13 @@
 
         .button {
             display: inline-block;
-            padding: 12px 25px;
+            padding: 13px 33px;
             font-size: 16px;
             text-align: center;
             text-decoration: none;
-            background-color: rgb(0, 140, 255);
+            background-color: rgb(31, 92, 172);
             color: #ffffff;
-            border-radius: 20px;
+            border-radius: 50px;
         }
     </style>
 </head>
@@ -187,7 +199,7 @@
                     <p>Hey John,</p>
                     <p>We're happy to let you know that your order has been shipped!</p>
                     <p
-                        style="color: #818181; font-weight:bold; border-bottom: 1px solid rgb(226, 226, 226); padding-bottom: 30px;">
+                        style="color: #696969; font-weight:bold; border-bottom: 1px solid rgb(226, 226, 226); padding-bottom: 30px;">
                         Please note it
                         may
                         take 24-48 hours
@@ -199,7 +211,7 @@
 
         <table>
             <tr>
-                <h3 style="text-align: center; margin-bottom: 0; color: rgb(0, 140, 255);">Order
+                <h3 style="text-align: center; margin-bottom: 0; color: rgb(31, 92, 172);">Order No.
                     #123456</h3>
                 <p style="text-align: center; margin: 0; color: grey; font-size: 12px; padding-top: 5px;">December 1,
                     2023</p>
@@ -238,8 +250,8 @@
 
 
         <table class="products-shipped">
-            <h4 style="color: rgb(0, 140, 255); border-bottom: 1px solid rgb(226, 226, 226); padding-top: 15px;">Shipped
-                Items</h4>
+            <p style="color: rgb(31, 92, 172); border-bottom: 1px solid rgb(226, 226, 226); padding-top: 15px;">Shipped
+                Items</p>
             <tr class="product-list">
                 <td class="product-image" style="width: 20%;">
                     <img src="https://shop.clearlyfiltered.com/cdn/shop/files/PitcherFilter_1_169a4689-22c1-4246-bce8-68e9af0b6c9b_750x.png?v=1694643413"
@@ -262,10 +274,10 @@
 
 
         <!-- ADDRESS AND SHIPPED ITEMS -->
-        <table class="responsive-table " style="border-top: 1px solid rgb(226, 226, 226);">
-            <tr>
+        <table class="responsive-table " style="border-top: 1px solid rgb(226, 226, 226); width: 100%;">
+            <tr class="addresses">
                 <td style="width: 50%;  padding: 0;" class="addy-column">
-                    <p style="margin: 0 0 4px 0; color: rgb(0, 140, 255); padding-top: 20px;">Shipping Address</p>
+                    <p style="margin: 0 0 4px 0; color: rgb(31, 92, 172); padding-top: 20px;">Shipping Address</p>
                     <p style="margin: 0 0 4px 0;  ">John Smith</p>
                     <p style="margin: 0 0 4px 0; ">2307 Benson Street</p>
                     <p style="margin: 0 0 4px 0; ">Eau Claire, WI, 54701</p>
@@ -273,11 +285,13 @@
                     <p style="margin: 0 0 0 0;">Tel. +1715-290-4862</p>
                 </td>
                 <td style="text-align: right; " class="ship">
-                    <p style="margin: 0 0 4px 0; color: rgb(0, 140, 255); padding-top: 20px;">
+                    <p style="margin: 0 0 4px 0; color: rgb(31, 92, 172); padding-top: 20px;">
                         Shipping Method</p>
                     <p style="margin: 0 0 4px 0;  ">USPS</p>
                     <p style="margin: 0 0 4px 0; ">Free Ground Shipping</p>
-                    <p style="margin: 0 0 8px 0; ">9400111206216431234712</p>
+                    <p style="margin: 0 0 8px 0; "><a href=""
+                            style="text-decoration: none; color: black;">9400111206216431234712</a>
+                    </p>
                     <br>
                     <br>
                 </td>
@@ -287,7 +301,7 @@
 
                 </td>
                 <td colspan=" 2" style="text-align: right;" class="ship">
-                    <h4 style="margin: 0; color: rgb(0, 140, 255);">Shipped Items</h4>
+                    <p style="margin: 0; color: rgb(31, 92, 172);">Shipped Items</p>
                     <p style="margin: 0;">1/1</p>
                 </td>
             </tr>
@@ -302,10 +316,10 @@
                         clicking the button
                         below: </p>
                     <p style="text-align: center;">
-                        <a href="[Your Website URL]" class="button">Track Package</a>
+                        <a href="[Your Website URL]" class="button" style="font-size: 15px;">Track Package</a>
                     </p>
 
-                    <p style=" text-align:center; font-size: 13px; width: 80%; margin: auto; line-height: 25px;">
+                    <p style=" text-align:center; font-size: 13px; width: 75%; margin: auto; line-height: 25px;">
                         Please
                         note, it could take
                         some time for
@@ -315,11 +329,8 @@
                         on the above.
                     </p>
                     <br>
-                    <p style="text-align: center; line-height: 25px;">Please do not hesitate to give us a call on
-                        8778762740 or send an
-                        email to
-                        info@clearlyfiltered.com if you
-                        have any questions at all.
+                    <p style="text-align: center; line-height: 25px;">Please do not hesitate to give us a call on (877)
+                        876-2740 or send an email to info@clearlyfiltered.com if you have any questions at all.
                     </p>
                     <p style="text-align: center; line-height: 25px; padding-top: 10px;">Many thanks,<br>
                         The Clearly Filtered Team </p>
@@ -334,24 +345,32 @@
         <!-- LINKS AND SOCIALS -->
         <table class="site-links">
             <tr class="link">
-                <td style="text-align: center; ""><a href="" style=" text-decoration: none;">SHOP</a></td>
-                <td style=" text-align: center; border-left: 1px solid #dfdfdf; border-right: 1px solid #dfdfdf;"><a
-                        href="" style=" text-decoration: none;">ABOUT</a></td>
-                <td style="text-align: center;" style="text-decoration: none;"><a href="">CONTACT</a></td>
+                <td style="width:33%; text-align: center; ""><a href="" style=" font-size: 14px; text-decoration:
+                    none;">SHOP</a></td>
+                <td
+                    style="width:33%;  text-align: center; border-left: 1px solid #dfdfdf; border-right: 1px solid #dfdfdf;">
+                    <a href="" style="font-size: 14px; text-decoration: none;">ABOUT</a></td>
+                <td style="width:33%; text-align: center;">
+                    <a href="" style="font-size: 14px; text-decoration: none;">CONTACT</a>
+                </td>
             </tr>
         </table>
 
         <table class="socials">
-            <tr class="social-links">
-                <p style="text-align: center; padding-top: 15px; margin-bottom: 5px; color: #818181;;">Follow Us</p>
-                <td style="text-align: center;"><a href="">Link</a></td>
-                <td style="text-align: center;"><a href="">Link</a></td>
-                <td style="text-align: center;"><a href="">Link</a></td>
+            <tr class="social-links" style="">
+                <p style="text-align: center;color: #818181; padding: 10px 0; margin: 0; font-size: 15px;">
+                    Follow Us</p>
+                <td style="width:33%; text-align: center;  padding: 0; margin: 0; "><a href=""><img
+                            src="https://www.orderlyemails.com/facebook_11.png" alt="" width="26px"></a></td>
+                <td style="width:33%; text-align: center;"><a href=""><img
+                            src="https://www.orderlyemails.com/twitter_11.png" alt="" width="26px"></a></td>
+                <td style="width:33%; text-align: center;"><a href=""><img
+                            src="https://www.orderlyemails.com/instagram_11.png" alt="" width="26px"></a></td>
             </tr>
         </table>
 
         <p style="text-align: center;"><a href=""
-                style="text-decoration: none; color: black;">www.clearlyfiltered.com</a></p>
+                style="text-decoration: none; color: black; font-size: 15px;">www.clearlyfiltered.com</a></p>
 
         <!-- BUSINESS ADDRESS -->
         <table>
